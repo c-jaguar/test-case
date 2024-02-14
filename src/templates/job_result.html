@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Работа</title>
+{% endblock %}
+
+{% block content %}
+    <h6>РАБОТА {{ job_id }} {{info}}</h6><br>
+    {% for res in result %}
+        <h5>{{ res }}</h5>
+    {% endfor %}
+
+
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Подключение к БД</title>
+{% endblock %}
+
+{% block content %}
+
+    <form method="POST" id="myForm">
+        <div>
+            <label for="db_host">DB_HOST:</label>
+            <input type="text" id="db_host" name="db_host">
+        </div>
+
+        <div>
+            <label for="db_port">DB_PORT:</label>
+            <input type="number" id="db_port" name="db_port">
+        </div>
+
+        <div>
+        <label for="db_user">DB_USER:</label>
+        <input type="text" id="db_user" name="db_user">
+        </div>
+
+        <div>
+            <label for="db_pass">DB_PASS:</label>
+            <input type="text" id="db_pass" name="db_pass">
+        </div>
+
+        <div>
+            <label for="db_name">DB_NAME:</label>
+            <input type="text" id="db_name" name="db_name">
+        </div>
+        <p style="display:inline"><b>* Cannot be null</b></p><br><br>
+        <button type="button" onclick="submitForm()">SUBMIT</button>>
+    </form>
+    <div id="responseArea"></div>
+    <script>
+        function submitForm() {
+            var formElement = document.getElementById('myForm');
+            var data = new FormData(formElement);
+            document.getElementById("responseArea").innerHTML = "Waiting for response"
+            fetch('/change_env', {
+               method: 'POST',
+               body: data,
+             }).then(resp => resp.text()
+             ).then(data => {
+               document.getElementById("responseArea").innerHTML = data;
+             }).catch(error => {
+               console.error(error);
+             });
+        }
+    </script>
+
+{% endblock %}

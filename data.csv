@@ -1,0 +1,39 @@
+﻿Storage max weight;;
+0,25;;
+0,50;;
+1,00;;
+2,50;;
+5,00;;
+;;
+Items;;
+Type;Name;Weight
+Coffee;Nescafe;4,00
+Coffee;Nescafe;4,00
+Coffee;Nescafe;2,00
+Coffee;Nescafe;2,00
+Coffee;Borneo;2,50
+Coffee;Borneo;2,50
+Coffee;Harakiri;3,50
+Coffee;Harakiri;3,50
+Coffee;SampleText;1,00
+Coffee;Half-kilo;0,50
+Coffee;Idontcare;0,75
+Coffee;SampleText;1,00
+Cookie;Big King;4,00
+Cookie;Big King;4,00
+Cookie;Big King;4,00
+Cookie;Big King;4,00
+Cookie;Murica;2,00
+Cookie;Murica;2,00
+Cookie;Murica;2,00
+Cookie;Aaahhuuuuhh;0,50
+Cookie;Regular cookie;0,30
+Cookie;Regular cookie;0,30
+Cookie;Thepain;1,20
+Cookie;Thepain;1,20
+Cookie;Releaseme;0,66
+Cookie;Donttouch;0,10
+;;
+Workers;;
+Albert Mirzabekovich;;
+Victor Mihailovich;;

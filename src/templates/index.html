@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Главная</title>
+{% endblock %}
+{% block content %}
+<div class="relative flex flex-col justify-center overflow-hidden bg-gray-50 sm:py-12">
+  <div class="relative bg-white px-6 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+    <div class="mx-auto max-w-md">
+      <div class="divide-y divide-gray-300/50">
+        <div class="space-y-6 pb-6 text-base leading-7 text-gray-600">
+          <div class="pt-8 text-base font-semibold leading-7 text-center">
+            <p>Доступные функции</p>
+          </div>
+          <ul class="space-y-4">
+            <li class="flex items-center">
+              <svg class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="11" />
+                <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+              </svg>
+              <p class="ml-4">
+                <a href="/db_settings">Изменить настройки подключения к БД</a>
+              </p>
+            </li>
+            <li class="flex items-center">
+              <svg class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="11" />
+                <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+              </svg>
+              <p class="ml-4"><a href="/json">Данные склада</a></p>
+            </li>
+            <li class="flex items-center">
+              <svg class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="11" />
+                <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+              </svg>
+              <p class="ml-4"><a href="/calculate_weight">Расчет суммарного веса товаров по типу</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
